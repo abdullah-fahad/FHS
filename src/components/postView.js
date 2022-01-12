@@ -6,7 +6,7 @@ import { useParams } from 'react-router';
 var getPost = async(id) => {
     var post;
     console.log(id);
-    await axios.post("/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
+    await axios.post("https://al-faisaliah-highschool.herokuapp.com/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
     console.log(post)
     return post;
 }
@@ -51,7 +51,7 @@ var PostView = () => {
     }
 
     var submit = async() => {
-        await axios.post('/add-comment', {id: post._id, comment: comment});
+        await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-comment', {id: post._id, comment: comment});
         if(!localStorage.getItem("comments")){
             localStorage.setItem("comments", [{postId: post._id, comment: comment}])
         }
@@ -73,12 +73,12 @@ var PostView = () => {
                 }
             }
             localStorage.setItem('likes', likes.push(post._id))
-            await axios.post('/add-like', {id: post._id});
+            await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-like', {id: post._id});
             setReRender(1)
             return null;
         }else{
             localStorage.setItem('likes', [post._id])
-            await axios.post('/add-like', {id: post._id});
+            await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-like', {id: post._id});
             return null;
         }
     }
