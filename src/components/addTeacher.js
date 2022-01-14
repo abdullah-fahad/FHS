@@ -83,8 +83,8 @@ var AddTeacher = () => {
                         </div>
                         <div className="col-6">
                             <div className="btn-group">
-                                <button className="btn btn-primary"><img src="https://img.icons8.com/ios-glyphs/20/ffffff/edit--v1.png"/></button>
-                                <button className="btn btn-danger"><img src="https://img.icons8.com/material-rounded/20/ffffff/filled-trash.png"/></button>
+                                <button className="btn btn-primary"><img alt="" src="https://img.icons8.com/ios-glyphs/20/ffffff/edit--v1.png"/></button>
+                                <button className="btn btn-danger"><img alt="" src="https://img.icons8.com/material-rounded/20/ffffff/filled-trash.png"/></button>
                             </div>
                         </div>
                     </div>
