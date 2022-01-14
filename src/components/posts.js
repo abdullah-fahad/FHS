@@ -22,7 +22,7 @@ var ShowPosts = () => {
             console.log(x)
             prettyPosts.push(
                 <div className="post">
-                    <img className="post-img" src={posts[x-1].picture} /> 
+                    <img alt="alfaisaliah-highschool" className="post-img" src={posts[x-1].picture} /> 
                     <h3 className="post-thumb-title">{posts[x-1].title}</h3>
                     <span className="author1">من {posts[x-1].author || "مجهول"}</span>
                     <p className="post-thumb-text">{posts[x-1].discraption}</p>
@@ -44,7 +44,7 @@ var Posts = () => {
             <br />
             <br />
             <div className="welcome">
-                <h3>مرحبًا بك في الموقع الرسمي لثانوية الفيصلية<img src="https://img.icons8.com/material-outlined/30/2C9EA4/sparkling.png"/></h3>
+                <h3>مرحبًا بك في الموقع الرسمي لثانوية الفيصلية<img alt="alfaisaliah-highschool" src="https://img.icons8.com/material-outlined/30/2C9EA4/sparkling.png"/></h3>
             </div>
             <br />
             <h4>ألبوم المدرسة</h4>
@@ -57,7 +57,7 @@ var Posts = () => {
         </div>
         <div id="postView" className="hide">
             <h1>{selectedPost? selectedPost.title:""}</h1>
-            <img src={selectedPost? selectedPost.picture:""} />
+            <img alt="alfaisaliah-highschool"src={selectedPost? selectedPost.picture:""} />
             <p>{selectedPost? selectedPost.content:""}</p>
         </div>
         </>

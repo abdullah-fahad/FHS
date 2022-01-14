@@ -50,7 +50,7 @@ var ShowPosts = () => {
             console.log(x)
             prettyPosts.push(
                 <div className="post">
-                    <img className="post-img" src={posts[x-1].picture} /> 
+                    <img alt="alfaisaliah-highschool" className="post-img" src={posts[x-1].picture} /> 
                     <h3 className="post-thumb-title">{posts[x-1].title}</h3>
                     <span className="author1">من {posts[x-1].author || "مجهول"}</span>
                     <p className="post-thumb-text">{posts[x-1].discraption}</p>
@@ -80,7 +80,7 @@ var ManagerPosts = () => {
         <div>
             <h1>المنشورات</h1>
             <p>حيث يمكنك الإشراف على المنشورات, تعديلها أو حذفها أو إضافة منشور جديد</p>
-            <button onClick={addPost} className="btn btn-success">إضافة منشور <img src="https://img.icons8.com/ios/20/ffffff/plus--v2.png"/></button>
+            <button onClick={addPost} className="btn btn-success">إضافة منشور <img alt="alfaisaliah-highschool"src="https://img.icons8.com/ios/20/ffffff/plus--v2.png"/></button>
             <br />
             <ShowPosts />
         </div>

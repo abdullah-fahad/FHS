@@ -12,13 +12,13 @@ var Header = () => {
                 <div className="collapse navbar-collapse mrtop" id="collapsibleNavbar">
                     <ul className="navbar-nav ">
                         <li className="nav-item">
-                            <a className="nav-link navbarLink" href="/home"><img src="https://img.icons8.com/material-rounded/20/306CB0/home.png"/>الرئيسية</a>
+                            <a className="nav-link navbarLink" href="/home"><img alt="alfaisaliah-highschool" src="https://img.icons8.com/material-rounded/20/306CB0/home.png"/>الرئيسية</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link navbarLink" href="/login"><img src="https://img.icons8.com/ios-filled/20/306CB0/login-rounded-right.png"/>صفحة الإدارة(للمعلمين)</a>
+                            <a className="nav-link navbarLink" href="/login"><img alt="alfaisaliah-highschool" src="https://img.icons8.com/ios-filled/20/306CB0/login-rounded-right.png"/>صفحة الإدارة(للمعلمين)</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link navbarLink" href="/contact-us"><img src="https://img.icons8.com/material-rounded/20/306CB0/mail.png"/>تواصل معنا</a>
+                            <a className="nav-link navbarLink" href="/contact-us"><img alt="alfaisaliah-highschool" src="https://img.icons8.com/material-rounded/20/306CB0/mail.png"/>تواصل معنا</a>
                         </li>
                     </ul>
                 </div>

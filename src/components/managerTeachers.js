@@ -59,7 +59,7 @@ var ShowTeachers = () => {
             prettyTeachers.push(
                 <>
                 <div className="teacher container">
-                    <img src={teachers[x-1].picture} className='teacher-image' />
+                    <img alt="alfaisaliah-highschool"src={teachers[x-1].picture} className='teacher-image' />
                     <br />
                     <div className='row'>
                         <div className="col-6">
@@ -67,7 +67,7 @@ var ShowTeachers = () => {
                         </div>
                         <div className="col-6">
                             <div className="btn-group">
-                                <button name={x-1} className="btn btn-primary" onClick={e => history.push(`/manager/edit-teacher/${teachers[e.target.name]._id}`)} ><img src="https://img.icons8.com/ios-glyphs/20/ffffff/edit--v1.png"/></button>
+                                <button name={x-1} className="btn btn-primary" onClick={e => history.push(`/manager/edit-teacher/${teachers[e.target.name]._id}`)} ><img alt="alfaisaliah-highschool" src="https://img.icons8.com/ios-glyphs/20/ffffff/edit--v1.png"/></button>
                                 <button name={x-1} className="btn btn-danger" onClick={remove}><img src="https://img.icons8.com/material-rounded/20/ffffff/filled-trash.png"/></button>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ var ManagerTeachers = () => {
         <div>
             <h1>المعلمين</h1>
             <p>حيث يمكنك الاطلاع على المعلمين, اضافة معلمين او تعديل معلوماتهم</p>
-            <button className="btn btn-success" type="button" onClick={addTeacher}>إضافة معلم <img src="https://img.icons8.com/ios/20/ffffff/plus--v2.png"/></button>
+            <button className="btn btn-success" type="button" onClick={addTeacher}>إضافة معلم <img alt="alfaisaliah-highschool" src="https://img.icons8.com/ios/20/ffffff/plus--v2.png"/></button>
             <ShowTeachers />
         </div>
     );

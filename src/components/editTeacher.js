@@ -102,7 +102,7 @@ var EditTeacher = () => {
                     <input type="text" className="form-control" placeholder={teacher.passcode} onChange={passcodeChanged}/>
                     <br />
                     <label>الصورة الشخصية</label><br />
-                    <img className="teacher-image" src={teacher.picture} />
+                    <img alt="alfaisaliah-highschool" className="teacher-image" src={teacher.picture} />
                     <input type="file" className="form-control" onChange={pictureChanged}/>
                     <br />
                 <br />

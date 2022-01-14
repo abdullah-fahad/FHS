@@ -76,7 +76,7 @@ var AddTeacher = () => {
             <p>قم بملئ الحقول أدناه بمعلومات المعلم ليتم إضافته</p>
             <label>معاينة:</label>
             <div className="teacher container">
-                    <img src={picture || "https://tse1.mm.bing.net/th?id=OIP.sVrMAmmEljdzKDEba8nttAHaHa&pid=Api&P=0&w=300&h=300"} className='teacher-image' />
+                    <img alt="alfaisaliah-highschool"src={picture || "https://tse1.mm.bing.net/th?id=OIP.sVrMAmmEljdzKDEba8nttAHaHa&pid=Api&P=0&w=300&h=300"} className='teacher-image' />
                     <br />
                     <div className='row'>
                         <div className="col-6">
@@ -111,7 +111,7 @@ var AddTeacher = () => {
                 <div>
                     <label>الصورة الشخصية</label>
                     <input onChange={pictureChanged} className='form-control' type="file" />
-                    <img src={picture || "https://tse1.mm.bing.net/th?id=OIP.sVrMAmmEljdzKDEba8nttAHaHa&pid=Api&P=0&w=300&h=300"} />
+                    <img alt="alfaisaliah-highschool" src={picture || "https://tse1.mm.bing.net/th?id=OIP.sVrMAmmEljdzKDEba8nttAHaHa&pid=Api&P=0&w=300&h=300"} />
                 </div>
             </form>
             <br />

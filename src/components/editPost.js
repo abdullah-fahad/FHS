@@ -147,7 +147,7 @@ var EditPost = () => {
                                 الصورة
                             </h4>
                             <input type="file" onChange={pictureChanged}  filenamw={postInfo.picture} className="form-control" />
-                            <img src={postInfo.picture} />
+                            <img alt="alfaisaliah-highschool" src={postInfo.picture} />
                         </section>
                         <section className="section">
                             <h4>

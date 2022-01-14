@@ -89,7 +89,7 @@ var PostView = () => {
                 <br />
                 <br />
                 <h1 className="post-view-title">{post.title}</h1>
-                <img className="post-view-image mx-auto d-block" src={post.picture} />
+                <img alt="alfaisaliah-highschool"className="post-view-image mx-auto d-block" src={post.picture} />
                 <span className="author">من {post.author || "مجهول"}</span>
                 <p className="post-view-content">{post.content}</p>
                 <hr />

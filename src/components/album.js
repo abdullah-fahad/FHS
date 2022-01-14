@@ -23,7 +23,7 @@ var Album = () => {
         <Slide indicators transitionDuration={500} duration={1200} arrows={false}>
          {album.map((albumImage, index)=> (
             <div className="each-slide" key={index}>
-              <img className="albumImage mx-auto d-block" src={albumImage.picture} />
+              <img alt="alfaisaliah-highschool" className="albumImage mx-auto d-block" src={albumImage.picture} />
               <h4 className="centered-text">{albumImage.picTitle}</h4>
             </div>
           ))} 
