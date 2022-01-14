@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
@@ -10,7 +9,7 @@ import Manager from './components/manager';
 import EditPost from './components/editPost';
 import AddPosts from './components/addPost';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Comments from './components/comments';
 import EditTeacher from './components/editTeacher';
