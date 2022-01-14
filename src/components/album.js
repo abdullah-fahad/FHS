@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import 'react-slideshow-image/dist/styles.css'
-import { Slide, Fade } from 'react-slideshow-image';
+import { Slide } from 'react-slideshow-image';
 import axios from 'axios';
 import './styles.css';
 

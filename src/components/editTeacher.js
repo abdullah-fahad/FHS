@@ -17,12 +17,6 @@ var EditTeacher = () => {
     var postId = useParams();
     var [teacher, setTeacher] = useState();
     var [teacherInfo, setTeacherInfo] = useState();
-    var cancel = () => {
-        return null;
-    }
-    var submit = () => {
-        return null;
-    }
 
     var pictureChanged = (e) => {
         e.preventDefault();

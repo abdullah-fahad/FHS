@@ -47,7 +47,7 @@ var ShowTeachers = () => {
     }
 }
 
-    if(teachers && teachers.length === 0 || !teachers){
+    if((teachers && teachers.length === 0) || !teachers){
         return(
             <h1 className='not-found'>لايوجد أي معلمين حتى الآن</h1>
         )
@@ -68,7 +68,7 @@ var ShowTeachers = () => {
                         <div className="col-6">
                             <div className="btn-group">
                                 <button name={x-1} className="btn btn-primary" onClick={e => history.push(`/manager/edit-teacher/${teachers[e.target.name]._id}`)} ><img alt="alfaisaliah-highschool" src="https://img.icons8.com/ios-glyphs/20/ffffff/edit--v1.png"/></button>
-                                <button name={x-1} className="btn btn-danger" onClick={remove}><img src="https://img.icons8.com/material-rounded/20/ffffff/filled-trash.png"/></button>
+                                <button name={x-1} className="btn btn-danger" onClick={remove}><img alt="" src="https://img.icons8.com/material-rounded/20/ffffff/filled-trash.png"/></button>
                             </div>
                         </div>
                     </div>

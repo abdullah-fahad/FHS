@@ -16,7 +16,6 @@ var getPosts = async() => {
 var ShowPosts = () => {
     var history = useHistory(); 
     var [posts, setPosts] = useState();
-    var [reRender, setReRender] = useState();
     if(!posts){getPosts().then(res => setPosts(res))}
     var prettyPosts = []
 
@@ -36,7 +35,7 @@ var ShowPosts = () => {
         })
     }
 
-    if(posts && posts.length === 0 || !posts){
+    if((posts && posts.length === 0) || !posts){
         return (
             <div className="not-found">
                 <h1>لا يوجد أي منشور حتى الآن</h1>
@@ -55,9 +54,9 @@ var ShowPosts = () => {
                     <span className="author1">من {posts[x-1].author || "مجهول"}</span>
                     <p className="post-thumb-text">{posts[x-1].discraption}</p>
                     <div class="btn-group">
-                        <button name={x-1} type="button" class="btn btn-primary" onClick={e => history.push(`/manager/edit-post/${posts[e.target.name]._id}`)}>تعديل <img src="https://img.icons8.com/ios-glyphs/15/ffffff/edit--v1.png"/></button>
-                        <button name={x-1} type="button" onClick={e => history.push(`/comments/${posts[e.target.name]._id}`)} class="btn btn-secondary">التعليقات<img src="https://img.icons8.com/material-rounded/15/ffffff/comments--v1.png"/></button>
-                        <button name={x-1} type="button" onClick={remove} class="btn btn-danger">حذف<img src="https://img.icons8.com/small/16/ffffff/filled-trash.png"/></button>
+                        <button name={x-1} type="button" class="btn btn-primary" onClick={e => history.push(`/manager/edit-post/${posts[e.target.name]._id}`)}>تعديل <img alt="" src="https://img.icons8.com/ios-glyphs/15/ffffff/edit--v1.png"/></button>
+                        <button name={x-1} type="button" onClick={e => history.push(`/comments/${posts[e.target.name]._id}`)} class="btn btn-secondary">التعليقات<img alt="" src="https://img.icons8.com/material-rounded/15/ffffff/comments--v1.png"/></button>
+                        <button name={x-1} type="button" onClick={remove} class="btn btn-danger">حذف<img alt="" src="https://img.icons8.com/small/16/ffffff/filled-trash.png"/></button>
                     </div>
                     <br />
                     <br />

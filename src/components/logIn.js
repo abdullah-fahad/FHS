@@ -29,6 +29,7 @@ var LogIn = () => {
                 localStorage.setItem("role", "manager")
                 sessionStorage.setItem("loggedIn", "true")
                 setReRender(1)
+                console.log(reRender)
             }
             else if(res.data.role === "teacher"){
                 localStorage.setItem("userInfo", JSON.stringify({name: res.data.name, picture: res.data.picture}))

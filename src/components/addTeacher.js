@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import NotAllowed from './notAllowed';
 import axios from 'axios';
 import './styles.css';
 import { useHistory } from 'react-router';

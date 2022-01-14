@@ -37,9 +37,8 @@ var PostView = () => {
     var [comments, setComments] = useState();
     var [comment, setComment] = useState();
     var [reRender, setReRender] = useState();
-    var [likeButton, setLikeButton] = useState({title: "إعجاب", className: "btn btn-outline-danger"});
+    console.log(reRender)
     var [likes, setLikes] = useState();
-    var [liked, setLiked] = useState(false);
     if(!post){getPost(postId.id).then(res => setPost(res))}
     if(post && !comments){setComments(showComments(post))}
     if(!likes && post){showLikesNumber(post).then(res => setLikes(res))}
@@ -61,27 +60,6 @@ var PostView = () => {
         setReRender(1);
     }
 
-    var addOrRemoveLike = async() => {
-        var likes = localStorage.getItem('likes')
-        if(localStorage.getItem('likes')){
-            for(var x = 0; x < likes.length; x++){
-                if(post._id === likes[x]){
-                    localStorage.setItem('likes', likes.splice(x, 1));
-                    await axios.post('/remove-like', {id: post._id});
-                    setReRender(1)
-                    return null;
-                }
-            }
-            localStorage.setItem('likes', likes.push(post._id))
-            await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-like', {id: post._id});
-            setReRender(1)
-            return null;
-        }else{
-            localStorage.setItem('likes', [post._id])
-            await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-like', {id: post._id});
-            return null;
-        }
-    }
 
     if(post){
         return(

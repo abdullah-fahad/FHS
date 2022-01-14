@@ -1,11 +1,11 @@
-import react from 'react';
+import  React from 'react';
 import './styles.css';
 
 var Header = () => {
     return(
         <div>
             <nav className="fixnav navbar navbar-expand-sm navbar-light fixed-top">
-                <a className="navbar-brand" href="/home"><img className="header-logo" src="https://i.imgur.com/t50LvLm.jpeg" /></a>
+                <a className="navbar-brand" href="/home"><img alt="alfaisaliah-highschool" className="header-logo" src="https://i.imgur.com/t50LvLm.jpeg" /></a>
                 <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon text-light"></span>
                 </button>

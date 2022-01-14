@@ -14,7 +14,6 @@ var getPosts = async() => {
 var ShowPosts = () => {
     var history = useHistory(); 
     var [posts, setPosts] = useState();
-    var [reRender, setReRender] = useState();
     if(!posts){getPosts().then(res => setPosts(res))}
     var prettyPosts = []
     if(posts){
