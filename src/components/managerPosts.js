@@ -21,7 +21,7 @@ var ShowPosts = () => {
 
     var remove = async e => {
         e.preventDefault();
-        await axios.post('/remove-news', {_id: posts[e.target.name]._id}).then(res => {
+        await axios.post('https://al-faisaliah-highschool.herokuapp.com/remove-news', {_id: posts[e.target.name]._id}).then(res => {
             window.location.reload();
             toast.success('تم حذف المنشور', {
                 position: "top-right",

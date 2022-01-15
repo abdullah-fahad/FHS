@@ -6,7 +6,7 @@ import NotAllowed from './notAllowed';
 var getPost = async(id) => {
     var post;
     console.log(id);
-    await axios.post("/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
+    await axios.post("https://al-faisaliah-highschool.herokuapp.com/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
     console.log(post)
     return post;
 }

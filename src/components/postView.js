@@ -26,7 +26,7 @@ var showComments = (post) => {
 
 var showLikesNumber = async(post) => {
     var likes;
-    await axios.post('/likes', {id: post._id}).then(res => likes = res.data);
+    await axios.post('https://al-faisaliah-highschool.herokuapp.com/likes', {id: post._id}).then(res => likes = res.data);
     return likes;
 }
 
@@ -50,7 +50,7 @@ var PostView = () => {
     }
 
     var submit = async() => {
-        await axios.post('/add-comment', {id: post._id, comment: comment});
+        await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-comment', {id: post._id, comment: comment});
         if(!localStorage.getItem("comments")){
             localStorage.setItem("comments", [{postId: post._id, comment: comment}])
         }

@@ -7,7 +7,7 @@ import './styles.css';
 var getTeacher = async(id) => {
     var teacher;
     console.log(id);
-    await axios.post("/search-teachers", {_id: id}).then(response => teacher = response.data).catch(err => console.log(err))
+    await axios.post("https://al-faisaliah-highschool.herokuapp.com/search-teachers", {_id: id}).then(response => teacher = response.data).catch(err => console.log(err))
     console.log(teacher)
     return teacher;
 }
@@ -54,7 +54,7 @@ var EditTeacher = () => {
     }
     var submit = async() => {
         console.log(teacher)
-        await axios.post('/edit-teacher', {name: teacher.name, passcode: teacher.passcode, picture: teacher.picture, classes: teacher.classes, _id: teacherInfo._id})
+        await axios.post('https://al-faisaliah-highschool.herokuapp.com/edit-teacher', {name: teacher.name, passcode: teacher.passcode, picture: teacher.picture, classes: teacher.classes, _id: teacherInfo._id})
             .then(res => {
                 history.push('/manager');
                 toast.success('تم تعديل بيانات المعلم', {
