@@ -8,7 +8,7 @@ import './styles.css';
 var getPost = async(id) => {
     var post;
     console.log(id);
-    await axios.post("https://al-faisaliah-highschool.herokuapp.com/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
+    await axios.post("/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
     console.log(post)
     return post;
 }
@@ -99,7 +99,7 @@ var EditPost = () => {
     }
     if(localStorage.getItem('userInfo') && sessionStorage.getItem('loggedIn')){
         var submit = async() => {
-            await axios.post('https://al-faisaliah-highschool.herokuapp.com/edit-news', {title: postInfo.title, discraption: postInfo.discraption, content: postInfo.content, picture: postInfo.picture, link: postInfo.link, linkTitle: postInfo.linkTitle, _id: postId, author: JSON.parse(localStorage.getItem("userInfo")).name})
+            await axios.post('/edit-news', {title: postInfo.title, discraption: postInfo.discraption, content: postInfo.content, picture: postInfo.picture, link: postInfo.link, linkTitle: postInfo.linkTitle, _id: postId, author: JSON.parse(localStorage.getItem("userInfo")).name})
                 .then(res => {
                     history.push('/manager')
                     toast.success('تم تعديل المنشور', {

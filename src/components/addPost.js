@@ -76,7 +76,7 @@ var AddPosts = () => {
                 document.getElementById('content').className = "text-light"
                 document.getElementById('content-section').className = "section-danger"
             }else{
-                await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-news', {title: postTitle, discraption: postDiscraption, content: postContent, picture: postImage.imageURL, link: postLink, linkTitle: postLinkTitle, author: JSON.parse(localStorage.getItem("userInfo")).name})
+                await axios.post('/add-news', {title: postTitle, discraption: postDiscraption, content: postContent, picture: postImage.imageURL, link: postLink, linkTitle: postLinkTitle, author: JSON.parse(localStorage.getItem("userInfo")).name})
                 .then(res => {
                     history.push('/manager')
                     toast.success('تم إضافة المنشور', {

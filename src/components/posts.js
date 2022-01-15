@@ -6,7 +6,7 @@ import Album from './album';
 var selectedPost;
 var getPosts = async() => {
     var posts;
-    await axios.get("https://al-faisaliah-highschool.herokuapp.com/get-news").then(response => posts = response.data).catch(err => console.log(err))
+    await axios.get("/get-news").then(response => posts = response.data).catch(err => console.log(err))
     return posts;
 
 }

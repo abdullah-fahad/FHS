@@ -6,13 +6,13 @@ import NotAllowed from './notAllowed';
 var getPost = async(id) => {
     var post;
     console.log(id);
-    await axios.post("https://al-faisaliah-highschool.herokuapp.com/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
+    await axios.post("/search", {_id: id}).then(response => post = response.data).catch(err => console.log(err))
     console.log(post)
     return post;
 }
 
 var removeComment = async(id, index) => {
-    await axios.post('https://al-faisaliah-highschool.herokuapp.com/remove-comment', {id, index})
+    await axios.post('/remove-comment', {id, index})
     window.location.reload()
 }
 

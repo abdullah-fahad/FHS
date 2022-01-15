@@ -50,7 +50,7 @@ var PostView = () => {
     }
 
     var submit = async() => {
-        await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-comment', {id: post._id, comment: comment});
+        await axios.post('/add-comment', {id: post._id, comment: comment});
         if(!localStorage.getItem("comments")){
             localStorage.setItem("comments", [{postId: post._id, comment: comment}])
         }

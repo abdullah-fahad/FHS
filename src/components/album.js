@@ -7,7 +7,7 @@ import './styles.css';
 
 var getAlbum = async() => {
   var album;
-  await axios.get("https://al-faisaliah-highschool.herokuapp.com/album").then(response => album = response.data).catch(err => console.log(err))
+  await axios.get("/album").then(response => album = response.data).catch(err => console.log(err))
   console.log(album)
   return album;
 }

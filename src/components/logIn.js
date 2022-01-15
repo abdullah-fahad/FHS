@@ -23,7 +23,7 @@ var LogIn = () => {
     }
 
     var submit = async() => {
-        await axios.post('https://al-faisaliah-highschool.herokuapp.com/login', {passcode: passcode}).then(res => {
+        await axios.post('/login', {passcode: passcode}).then(res => {
             if(res.data.role === "manager"){
                 localStorage.setItem("userInfo", JSON.stringify({name: res.data.name, picture: res.data.picture}))
                 localStorage.setItem("role", "manager")

@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 
 var getTeachers = async() => {
     var teachers;
-    await axios.get("https://al-faisaliah-highschool.herokuapp.com/get-teachers").then(response => {teachers = response.data; console.log(response.data)}).catch(err => console.log(err))
+    await axios.get("/get-teachers").then(response => {teachers = response.data; console.log(response.data)}).catch(err => console.log(err))
     return teachers;
 
 }
@@ -21,7 +21,7 @@ var ShowTeachers = () => {
         e.preventDefault();
         console.log(e.target.name)
         if(teachers[e.target.name]._id){
-            await axios.post('https://al-faisaliah-highschool.herokuapp.com/remove-teacher', {_id: teachers[e.target.name]._id}).then(res => {
+            await axios.post('/remove-teacher', {_id: teachers[e.target.name]._id}).then(res => {
                 history.push('/manager')
                 toast.success('تم إزالة المستخدم', {
                     position: "top-right",
