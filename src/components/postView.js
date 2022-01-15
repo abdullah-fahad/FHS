@@ -89,7 +89,13 @@ var PostView = () => {
             <div>
                 <br />
                 <br />
-                <h1>لم يتم إيجاد المنشور الذي تبحث عنه !</h1>
+                <div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">تحميل...</span>
+  </div>
+</div>
+<br />
+<br />
             </div>
         )
     }
