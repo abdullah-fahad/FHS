@@ -116,7 +116,8 @@
     margin: auto;
 }
 .post-view-image{
-    height: 90%;
+    height: 50%;
+    width: auto;
     border-radius: 20px;
     margin: 20px;
 }
