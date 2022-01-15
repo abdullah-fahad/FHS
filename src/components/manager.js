@@ -6,8 +6,8 @@ import NotAllowed from './notAllowed';
 import './styles.css';
 
 var Manager = () => {
-    var [managerInfo, setManagerInfo] = useState();
-    setManagerInfo(JSON.parse(localStorage.getItem('userInfo')))
+    var [managerInfo, setManagerInfo] = useState(JSON.parse(localStorage.getItem('userInfo')));
+    setManagerInfo(managerInfo)
     var [view, setView] = useState(<ManagerPosts />);
     if(!sessionStorage.getItem("loggedIn") || !localStorage.getItem('userInfo')){
         return <NotAllowed />
