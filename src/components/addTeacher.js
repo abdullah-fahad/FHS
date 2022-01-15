@@ -52,7 +52,7 @@ var AddTeacher = () => {
                 progress: undefined,
                 });
         }else{
-            await axios.post('/add-teacher', {name: name, picture: picture || "https://tse1.mm.bing.net/th?id=OIP.sVrMAmmEljdzKDEba8nttAHaHa&pid=Api&P=0&w=300&h=300", passcode: passcode, classes: {grades, sections}})
+            await axios.post('https://al-faisaliah-highschool.herokuapp.com/add-teacher', {name: name, picture: picture || "https://tse1.mm.bing.net/th?id=OIP.sVrMAmmEljdzKDEba8nttAHaHa&pid=Api&P=0&w=300&h=300", passcode: passcode, classes: {grades, sections}})
             .then(response => {
                 history.push('/manager')
                 toast.success('تم إضافة المعلم', {

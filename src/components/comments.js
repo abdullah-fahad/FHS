@@ -12,7 +12,7 @@ var getPost = async(id) => {
 }
 
 var removeComment = async(id, index) => {
-    await axios.post('/remove-comment', {id, index})
+    await axios.post('https://al-faisaliah-highschool.herokuapp.com/remove-comment', {id, index})
     window.location.reload()
 }
 
