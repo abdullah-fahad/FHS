@@ -14,12 +14,28 @@ var getPosts = async() => {
 var ShowPosts = () => {
     var history = useHistory(); 
     var [posts, setPosts] = useState();
-    if(!posts){getPosts().then(res => setPosts(res))}
-    var prettyPosts = []
+    var [prettyPosts, setPrettyPosts] = useState([]);
+    if(!posts){
+        setPosts([
+            <div>
+                <br/>
+                <br/>
+                <h4>جارٍ تحميل المنشورات</h4>
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">تحميل...</span>
+                </div>
+                <br/>
+                <br/>
+            </div>
+        ])
+        getPosts().then(res => setPosts(res))
+    }
+    
     if(posts){
+        
         for(var x = posts.length; x > 0; x--){
             console.log(x)
-            prettyPosts.push(
+            setPrettyPosts(prettyPosts.push(
                 <div className="post">
                     <img alt="alfaisaliah-highschool" className="post-img" src={posts[x-1].picture} /> 
                     <h3 className="post-thumb-title">{posts[x-1].title}</h3>
@@ -29,7 +45,7 @@ var ShowPosts = () => {
                         history.push(`/home/${posts[e.target.name]._id}`);
                         }}>اقرأ الخبر</button>
                 </div>
-            )
+            ))
         }
     }
     console.log(prettyPosts)
@@ -47,7 +63,7 @@ var Posts = () => {
             </div>
             <br />
             <h4>ألبوم المدرسة</h4>
-            <Album />
+                <Album />
             <br />
             <h4>المنشورات</h4>
             <div>
