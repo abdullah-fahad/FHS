@@ -18,7 +18,7 @@ var ShowPosts = () => {
     if(!posts){
         getPosts().then(res => setPosts(res))
         prettyPosts.push(
-            <div className='box-center'>
+            <div className='center'>
                 <br/>
                 <br/>
                 <h4>جارٍ تحميل المنشورات</h4>
