@@ -14,10 +14,10 @@ var getPosts = async() => {
 var ShowPosts = () => {
     var history = useHistory(); 
     var [posts, setPosts] = useState();
-    var [prettyPosts, setPrettyPosts] = useState([]);
+    var prettyPosts = []
     if(!posts){
         getPosts().then(res => setPosts(res))
-        return(
+        prettyPosts.push(
             <div>
                 <br/>
                 <br/>
@@ -32,11 +32,10 @@ var ShowPosts = () => {
     }
     
     if(posts){
-        
+        prettyPosts = []
         for(var x = posts.length; x > 0; x--){
-            var prettyposts = prettyPosts;
             console.log(x)
-            setPrettyPosts(prettyposts.push(
+            prettyPosts.push(
                 <div className="post">
                     <img alt="alfaisaliah-highschool" className="post-img" src={posts[x-1].picture} /> 
                     <h3 className="post-thumb-title">{posts[x-1].title}</h3>
@@ -46,7 +45,7 @@ var ShowPosts = () => {
                         history.push(`/home/${posts[e.target.name]._id}`);
                         }}>اقرأ الخبر</button>
                 </div>
-            ))
+            )
         }
     }
     console.log(prettyPosts)
