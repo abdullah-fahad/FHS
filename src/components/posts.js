@@ -16,10 +16,8 @@ var ShowPosts = () => {
     var [posts, setPosts] = useState();
     var prettyPosts = []
     if(!posts){
-        getPosts().then(res => setPosts(res))
-        prettyPosts.push(
+        prettyPosts =
             <div className='center'>
-                <br/>
                 <br/>
                 <h4>جارٍ تحميل المنشورات</h4>
                 <div class="spinner-border" role="status">
@@ -27,8 +25,22 @@ var ShowPosts = () => {
                 </div>
                 <br/>
                 <br/>
-            </div>
-        )
+                <br/>
+                <br/>
+                <br/>
+            </div>;
+        getPosts().then(res => setPosts(res)).catch(err => {
+            prettyPosts =
+            <div className='center'>
+                <br/>
+                <h4>لم يتم إيجاد المنشورات</h4>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>;
+        })
     }
     
     if(posts){
