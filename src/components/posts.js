@@ -34,8 +34,9 @@ var ShowPosts = () => {
     if(posts){
         
         for(var x = posts.length; x > 0; x--){
+            var prettyposts = prettyPosts;
             console.log(x)
-            setPrettyPosts(prettyPosts.push(
+            setPrettyPosts(prettyposts.push(
                 <div className="post">
                     <img alt="alfaisaliah-highschool" className="post-img" src={posts[x-1].picture} /> 
                     <h3 className="post-thumb-title">{posts[x-1].title}</h3>
