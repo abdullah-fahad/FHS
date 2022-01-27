@@ -16,7 +16,8 @@ var ShowPosts = () => {
     var [posts, setPosts] = useState();
     var [prettyPosts, setPrettyPosts] = useState([]);
     if(!posts){
-        setPosts([
+        getPosts().then(res => setPosts(res))
+        return(
             <div>
                 <br/>
                 <br/>
@@ -27,8 +28,7 @@ var ShowPosts = () => {
                 <br/>
                 <br/>
             </div>
-        ])
-        getPosts().then(res => setPosts(res))
+        )
     }
     
     if(posts){
