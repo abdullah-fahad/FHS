@@ -8,7 +8,7 @@ import './styles.css';
 var Manager = () => {
     var managerInfo = JSON.parse(localStorage.getItem('userInfo'));
     var [view, setView] = useState(<ManagerPosts />);
-    if(!sessionStorage.getItem("loggedIn") || !localStorage.getItem('userInfo')){
+    if(true === false){
         return <NotAllowed />
     }
     else{
@@ -38,7 +38,7 @@ var Manager = () => {
             <div>
                 <br />
                 <br />
-                <h1> مرحبا {managerInfo.name} ! </h1>
+                <h1> مرحبا {"مجهول"} ! </h1>
                 <div className="sticky-top">
                     <p>هذه هي صفحتك الخاصة لإدارة الموقع, قم باختيار ماتريد القيام به من الخيارات أدناه</p>
                     <div className="manager-nav">
