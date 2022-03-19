@@ -166,9 +166,6 @@
     background-color: rgb(211, 135, 35);
     border-color: rgb(221, 135, 23);;
 }
-.album-btn{
-    background-color: #2C9EA4;
-}
 .selected{
     background-color: #288388;
 }
@@ -276,4 +273,9 @@ textarea{
 }
 .album-btns{
     margin: 20px;
+}
+.album-image{
+    width: 100%;
+    height: auto ;
+    border-radius: 20px;
 }
