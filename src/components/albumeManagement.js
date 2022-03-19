@@ -16,7 +16,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -24,7 +24,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -32,7 +32,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -40,7 +40,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -48,7 +48,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -56,7 +56,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -64,7 +64,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -72,7 +72,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>
@@ -80,7 +80,7 @@ var AlbumeManagement = () =>{
             <div className='album-image-container'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <p className='album-caption'>Hey!</p>
-                <div className='btn-group'>
+                <div className='btn-group album-btns'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger'>حذف</button>
                 </div>

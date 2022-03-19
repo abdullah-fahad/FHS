@@ -274,3 +274,6 @@ textarea{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s;
 }
+.album-btns{
+    margin: 20px;
+}
