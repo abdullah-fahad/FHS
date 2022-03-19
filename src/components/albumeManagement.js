@@ -9,6 +9,7 @@ var getAlbum = async() => {
 
 var AlbumeManagement = () =>{
     var [album, setAlbum] = useState()
+    var [onEditing, setOnEditing] = useState(-1);
     if(!album){getAlbum().then(res => setAlbum(res))}
     if(album) {
         return (
@@ -18,7 +19,7 @@ var AlbumeManagement = () =>{
                 <img className='album-image' alt="fff" src={albumImage.picture} />
                 <p className='album-caption'>{albumImage.picTitle}</p>
                 <div className='btn-group album-btns'>
-                    <button key={index} className='btn btn-info album-btn'>تعديل الإسم</button>
+                    <button key={index} className='btn btn-info'>{onEditing === index? "حفظ":"تعديل الإسم"}</button>
                     <button key={index} className='btn btn-danger'>حذف</button>
                 </div>
             </div>
