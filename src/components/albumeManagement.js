@@ -14,7 +14,7 @@ var AlbumeManagement = () =>{
         return (
             <div className='post'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <span className='album-caption'>Hey!</span>
+                <p className='album-caption'>Hey!</p>
                 <div className='btn-group'>
                     <button className='btn btn-info album-btn'>تعديل الإسم</button>
                     <button className='btn btn-danger album-btn'>حذف</button>
