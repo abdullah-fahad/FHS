@@ -1,6 +1,6 @@
 import React from 'react';
 import Album from './album';
-import AlbumeManagement from './AlbumeManagement';
+import AlbumeManagement from './albumeManagement';
 import './styles.css';
 
 var ManagerAlbum = () => {
