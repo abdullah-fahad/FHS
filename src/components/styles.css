@@ -261,3 +261,16 @@ textarea{
     text-align: center;
     margin: auto;
 }
+.album-image-container{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 260px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: transparent;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s;
+}
