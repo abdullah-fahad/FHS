@@ -13,78 +13,16 @@ var AlbumeManagement = () =>{
     if(album) {
         return (
             <>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
+            {album.map((albumImage, index)=> (
+                <div className='album-image-container'>
+                <img className='album-image' alt="fff" src={albumImage.picture} />
+                <p className='album-caption'>{albumImage.picTitle}</p>
                 <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
+                    <button key={index} className='btn btn-info album-btn'>تعديل الإسم</button>
+                    <button key={index} className='btn btn-danger'>حذف</button>
                 </div>
             </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
-            <div className='album-image-container'>
-                <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
-                <p className='album-caption'>Hey!</p>
-                <div className='btn-group album-btns'>
-                    <button className='btn btn-info album-btn'>تعديل الإسم</button>
-                    <button className='btn btn-danger'>حذف</button>
-                </div>
-            </div>
+          ))}
             </>
         )
     }
