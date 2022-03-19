@@ -12,7 +12,7 @@ var AlbumeManagement = () =>{
     if(!album){getAlbum().then(res => setAlbum(res))}
     if(album) {
         return (
-            <div className='album-image-container'>
+            <div className='post'>
                 <img className='album-image' alt="fff" src="https://via.placeholder.com/150" />
                 <span className='album-caption'>Hey!</span>
                 <div className='btn-group'>
